@@ -1,0 +1,48 @@
+<mvc:View xmlns:macros="sap.fe.macros" controllerName="task.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell>
+        <Page id="page" title="{i18n>title}">
+            <content />
+            <VBox>
+                <VBox height="25rem">
+                    <Table id="RTable" headerText="Pagination Table" items="{/data}">
+                        <columns>
+                            <Column>
+                                <Text text="ID"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Name"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="AGE"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="City"></Text>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{ID}"></Text>
+                                    <Text text="{Name}"></Text>
+                                    <Text text="{Age}"></Text>
+                                    <Text text="{City}"></Text>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </VBox>
+                <HBox justifyContent="Center" class="sapUiSmallMargin">
+                    <Button id="navLeftButton" icon="sap-icon://navigation-left-arrow"
+                        press="onPreviousPress"></Button>
+                    <Text class="sapUiTinyMargin"
+                        text="Page {pageInfoModel>/currentPage} of {pageInfoModel>/totalPages}" />
+                    <Button id="navRightButton" icon="sap-icon://navigation-right-arrow"
+                        press="onNextPress"></Button>
+
+                </HBox>
+            </VBox>
+        </Page>
+    </Shell>
+</mvc:View>

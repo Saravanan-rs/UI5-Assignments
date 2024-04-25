@@ -1,0 +1,87 @@
+<mvc:View controllerName="odataapp.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app">
+            <Page title="Invoices List">
+                <List id="invoicesList" items="{/Invoices}" growing="true" growingThreshold="1000">
+                    <items>
+                        <StandardListItem title="{ShipperName}" description="{ProductName}" />
+                    </items>
+                </List>
+
+                <!-- <Page id="page" title="{i18n>title}">
+                <content />
+                <Page title="Search Customers">
+                    <SearchField width="100%" placeholder="Enter CustomerID" search="onSearch" />
+                    <List id="customerList" items="{/Customers}" growing="true" growingThreshold="5">
+                        <items>
+                            <StandardListItem title="{CustomerID}" description="{ContactName}" />
+                        </items>
+                    </List>
+                </Page> -->
+                <!-- <Table items="{/Employees}">
+                    <columns>
+                        <Column>
+                            <Text text="Employee ID" />
+                        </Column>
+                        <Column>
+                            <Text text="Full Name" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Title" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Birth Date" />
+                        </Column>
+                        <Column>
+                            <Text text="Hire Date" />
+                        </Column>
+                        <Column>
+                            <Text text="Full Address" />
+                        </Column>
+                       
+                        <Column>
+                            <Text text="Region" />
+                        </Column>
+                        <Column>
+                            <Text text="Postal Code" />
+                        </Column>
+                        <Column>
+                            <Text text="Country" />
+                        </Column>
+                        <Column>
+                            <Text text="Home Phone" />
+                        </Column>
+                        <Column>
+                            <Text text="Extension" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <ObjectIdentifier title="{EmployeeID}" />
+                                <Text text="{TitleOfCourtesy} {FirstName} {LastName}" />
+
+                                <Text text="{Title}" />
+
+                                <Text text="{BirthDate}" />
+                                <Text text="{HireDate}" />
+                                <Text text="{Address} {City}" />
+                              
+                                <Text text="{Region}" />
+                                <Text text="{PostalCode}" />
+                                <Text text="{Country}" />
+                                <Text text="{HomePhone}" />
+                                <Text text="{Extension}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table> -->
+
+            </Page>
+        </App>
+    </Shell>
+</mvc:View>

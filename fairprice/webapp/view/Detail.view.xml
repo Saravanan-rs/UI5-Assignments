@@ -1,0 +1,110 @@
+<mvc:View xmlns:simple="sap.gantt.simple" controllerName="fairprice.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <Page id="Detail" title="Print Shelf Labels({parameterModel>/header})" showNavButton="true" navButtonPress="onNavBack">
+        <FlexBox alignItems="Start" justifyContent="Center" class="flexBox">
+            <VBox class="sapUiSmallMarginBegin" justifyContent="Center" width="100%"> 
+                <HBox class="sapUiSmallMargin" justifyContent="SpaceBetween" width="95%">
+                    <VBox class="sapUiSmallMarginTop">
+                        <Label text="Store" required="true"></Label>
+                        <Input id="storeInput" showValueHelp="true"  required="true" valueHelpRequest="onValueHelpRequest" change="validateInput"/>
+                    </VBox>
+
+                    <SelectDialog items="{ storeModel>/stores }" title="Select a Store" confirm="onConfirm" cancel="onCancel">
+                        <items>
+                            <DisplayListItem label="{storeModel>name}" value="{storeModel>id}" />
+                        </items>
+                    </SelectDialog>
+                    
+                    <VBox class="sapUiSmallMarginTop" justifyContent="Start" >
+                        <Label text="Display"   required="true"></Label>
+                        <Select id="displaySelect"  required="true" change="validateSelect">
+                            <items>
+                                <core:Item key="" text="" />
+                                <core:Item key="RSVP" text="RSVP" />
+                                <core:Item key="RS" text="RS" />
+                                <core:Item key="RV" text="RV" />
+                            </items>
+                        </Select>
+                    </VBox>
+
+                    <VBox >
+                        <RadioButtonGroup id="radioGroup" columns="3">
+                            <RadioButton text="Promo Start Date"></RadioButton>
+                            <RadioButton text="Promo End Date"></RadioButton>
+                            <RadioButton text="Updated Date"></RadioButton>
+                        </RadioButtonGroup>
+
+                        <HBox>
+                            <DatePicker id="startDatePicker" change="onStartDateChange"></DatePicker>
+                            <Label text="To" class="sapUiSmallMarginBeginEnd"/>
+                            <DatePicker id="endDatePicker" ></DatePicker>
+                        </HBox>
+
+                    </VBox>
+
+                </HBox>
+
+                <HBox class="sapUiSmallMarginBegin">
+                    <RadioButtonGroup id="radioGroup2" columns="2" select="onRadioButtonChange">
+                        <RadioButton text="SKU"></RadioButton>
+                        <RadioButton text="Brand Description"></RadioButton>
+                    </RadioButtonGroup>
+                </HBox>
+
+                <TextArea id="textInput" class="sapUiSmallMargin" width="90%" height="7rem" placeholder="Enter each value in new Line (or) Comma separated." change="onTextAreaChange"></TextArea>
+
+                <HBox justifyContent="End" class="sapUiSmallMargin">
+                    <Button id="loadButton" type="Emphasized" text="Load Data" press="onLoadData"></Button>
+                    <HBox width="1rem"></HBox>
+                    <Button id="clearButton" text="Clear All" press="onClearAll"></Button>
+                </HBox>
+                <VBox>
+                    <Table id="formDataTable" alternateRowColors="true" width="95%"  items="{formData>/entries}" visible="false">
+                        <columns>
+                            <Column>
+                                <Text text="Store"/>
+                            </Column>
+                            <Column>
+                                <Text text="Display"/>
+                            </Column>
+                            <Column>
+                                <Text text="Promo Start Date"/>
+                            </Column>
+                            <Column>
+                                <Text text="Promo End Date"/>
+                            </Column>
+                            <Column>
+                                <Text text="Date(Type)"/>
+                            </Column>
+                            <Column>
+                                <Text text="SKU/Brand Desc"/>
+                            </Column>
+
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{formData>store}"/>
+                                    <Text text="{formData>display}"/>
+                                    <Text text="{formData>startDate}"/>
+                                    <Text text="{formData>endDate}"/>
+                                    <Text text="{formData>radioValue}"/>
+                                    <Text text="{formData>radio2Value}"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </VBox>
+                <HBox id="PaginationBar" visible="false" justifyContent="Center" class="sapUiSmallMargin">
+                    <Button id="navLeftButton" icon="sap-icon://navigation-left-arrow" press="onPreviousPress"></Button>
+                    <Text class="sapUiTinyMargin" text="Page {pageInfoModel>/currentPage} of {pageInfoModel>/totalPages}" />
+                    <Button id="navRightButton" icon="sap-icon://navigation-right-arrow" press="onNextPress"></Button>
+                </HBox>
+            </VBox>
+        </FlexBox>
+    </Page>
+
+</mvc:View>

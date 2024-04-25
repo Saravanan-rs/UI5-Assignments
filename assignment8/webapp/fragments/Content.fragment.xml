@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <List id="_IDGenList1" headerText="List Title">
+        <items>
+            <StandardListItem id="_IDGenStandardListItem1" title="Item 1"/>
+            <StandardListItem id="_IDGenStandardListItem2" title="Item 2"/>
+            <!-- Add more list items as needed -->
+        </items>
+    </List>
+</core:FragmentDefinition>

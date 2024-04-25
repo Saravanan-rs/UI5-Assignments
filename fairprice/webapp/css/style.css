@@ -1,0 +1,24 @@
+/* Enter your custom styles here */
+.customPadding {
+    padding-top: 7%;
+}
+
+.tileMargin {
+    margin-right: 80px;
+/* Space between tiles */
+}
+
+.leftAlignedText {
+    text-align: left;
+}
+
+.rightAlignedText {
+    text-align: right;
+}
+
+.flexBox{
+    background-color:white;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}

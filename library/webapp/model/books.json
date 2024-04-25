@@ -1,0 +1,171 @@
+{
+    "books": [
+        {
+            "id": "001",
+            "title": "Introduction to Algorithms",
+            "author": "Thomas H. Cormen",
+            "publishedYear": 1990,
+            "status": "in"
+        },
+        {
+            "id": "002",
+            "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+            "author": "Robert C. Martin",
+            "publishedYear": 2008,
+            "status": "in"
+        },
+        {
+            "id": "003",
+            "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+            "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+            "publishedYear": 1994,
+            "status": "out"
+        },
+        {
+            "id": "004",
+            "title": "The Pragmatic Programmer: Your Journey to Mastery",
+            "author": "Andrew Hunt, David Thomas",
+            "publishedYear": 1999,
+            "status": "in"
+        },
+        {
+            "id": "005",
+            "title": "Code: The Hidden Language of Computer Hardware and Software",
+            "author": "Charles Petzold",
+            "publishedYear": 1999,
+            "status": "out"
+        },
+        {
+            "id": "006",
+            "title": "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+            "author": "Gayle Laakmann McDowell",
+            "publishedYear": 2008,
+            "status": "in"
+        },
+        {
+            "id": "007",
+            "title": "The Art of Computer Programming",
+            "author": "Donald E. Knuth",
+            "publishedYear": 1968,
+            "status": "in"
+        },
+        {
+            "id": "008",
+            "title": "Structure and Interpretation of Computer Programs",
+            "author": "Harold Abelson, Gerald Jay Sussman, Julie Sussman",
+            "publishedYear": 1984,
+            "status": "out"
+        },
+        {
+            "id": "009",
+            "title": "Head First Design Patterns",
+            "author": "Eric Freeman, Bert Bates, Kathy Sierra, Elisabeth Robson",
+            "publishedYear": 2004,
+            "status": "in"
+        }, {
+            "id": "001",
+            "title": "Introduction to Algorithms",
+            "author": "Thomas H. Cormen",
+            "publishedYear": 1990,
+            "status": "in"
+        },
+        {
+            "id": "002",
+            "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+            "author": "Robert C. Martin",
+            "publishedYear": 2008,
+            "status": "in"
+        },
+        {
+            "id": "003",
+            "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+            "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+            "publishedYear": 1994,
+            "status": "out"
+        },
+        {
+            "id": "004",
+            "title": "The Pragmatic Programmer: Your Journey to Mastery",
+            "author": "Andrew Hunt, David Thomas",
+            "publishedYear": 1999,
+            "status": "in"
+        },
+        {
+            "id": "005",
+            "title": "Code: The Hidden Language of Computer Hardware and Software",
+            "author": "Charles Petzold",
+            "publishedYear": 1999,
+            "status": "out"
+        },
+        {
+            "id": "006",
+            "title": "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+            "author": "Gayle Laakmann McDowell",
+            "publishedYear": 2008,
+            "status": "in"
+        },
+        {
+            "id": "007",
+            "title": "The Art of Computer Programming",
+            "author": "Donald E. Knuth",
+            "publishedYear": 1968,
+            "status": "in"
+        },
+        {
+            "id": "008",
+            "title": "Structure and Interpretation of Computer Programs",
+            "author": "Harold Abelson, Gerald Jay Sussman, Julie Sussman",
+            "publishedYear": 1984,
+            "status": "out"
+        },
+        {
+            "id": "009",
+            "title": "Head First Design Patterns",
+            "author": "Eric Freeman, Bert Bates, Kathy Sierra, Elisabeth Robson",
+            "publishedYear": 2004,
+            "status": "in"
+        },
+        {
+            "id": "005",
+            "title": "Code: The Hidden Language of Computer Hardware and Software",
+            "author": "Charles Petzold",
+            "publishedYear": 1999,
+            "status": "out"
+        },
+        {
+            "id": "006",
+            "title": "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+            "author": "Gayle Laakmann McDowell",
+            "publishedYear": 2008,
+            "status": "in"
+        },
+        {
+            "id": "007",
+            "title": "The Art of Computer Programming",
+            "author": "Donald E. Knuth",
+            "publishedYear": 1968,
+            "status": "in"
+        },
+        {
+            "id": "008",
+            "title": "Structure and Interpretation of Computer Programs",
+            "author": "Harold Abelson, Gerald Jay Sussman, Julie Sussman",
+            "publishedYear": 1984,
+            "status": "out"
+        },
+        {
+            "id": "009",
+            "title": "Head First Design Patterns",
+            "author": "Eric Freeman, Bert Bates, Kathy Sierra, Elisabeth Robson",
+            "publishedYear": 2004,
+            "status": "in"
+        },
+        {
+            "id": "010",
+            "title": "Computer Networks",
+            "author": "Andrew S. Tanenbaum, David J. Wetherall",
+            "publishedYear": 1981,
+            "status": "out"
+        }
+    ]
+}

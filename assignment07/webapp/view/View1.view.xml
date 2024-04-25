@@ -1,0 +1,9 @@
+<mvc:View controllerName="assignment07.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content >
+         <List id="yourListId" inset="false"/>
+        </content>
+    </Page>
+</mvc:View>

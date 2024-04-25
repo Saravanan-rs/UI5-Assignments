@@ -1,0 +1,184 @@
+{
+  "employees": [
+    {
+      "EmployeeId": "1",
+      "Name": "George Abraham",
+      "Department": "Products",
+      "Gender": "Male",
+      "BaseLocation": "Bangalore",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Shruthi",
+          "Number": "123"
+        },
+        "HomeAddress": {
+          "Street": "Street Name",
+          "FlatNo": "123",
+          "City": "Bangalore"
+        }
+      }
+    },
+    {
+      "EmployeeId": "2",
+      "Name": "Shailesh Shetty",
+      "Department": "Customer Consulting",
+      "Gender": "Male",
+      "BaseLocation": "Canada",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Priya",
+          "Number": "456"
+        },
+        "HomeAddress": {
+          "Street": "Another Street Name",
+          "FlatNo": "456",
+          "City": "Vancouver"
+        }
+      }
+    },
+    {
+      "EmployeeId": "3",
+      "Name": "Sara Johnson",
+      "Department": "Marketing",
+      "Gender": "Female",
+      "BaseLocation": "New York",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "John",
+          "Number": "789"
+        },
+        "HomeAddress": {
+          "Street": "3rd Avenue",
+          "FlatNo": "789",
+          "City": "New York"
+        }
+      }
+    },
+    {
+      "EmployeeId": "4",
+      "Name": "Rahul Gupta",
+      "Department": "Finance",
+      "Gender": "Male",
+      "BaseLocation": "Mumbai",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Sunita",
+          "Number": "012"
+        },
+        "HomeAddress": {
+          "Street": "Marine Drive",
+          "FlatNo": "012",
+          "City": "Mumbai"
+        }
+      }
+    },
+    {
+      "EmployeeId": "5",
+      "Name": "Emily Williams",
+      "Department": "Human Resources",
+      "Gender": "Female",
+      "BaseLocation": "London",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "David",
+          "Number": "345"
+        },
+        "HomeAddress": {
+          "Street": "Baker Street",
+          "FlatNo": "345",
+          "City": "London"
+        }
+      }
+    },
+    {
+      "EmployeeId": "6",
+      "Name": "Carlos Rodriguez",
+      "Department": "Operations",
+      "Gender": "Male",
+      "BaseLocation": "Mexico City",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Maria",
+          "Number": "678"
+        },
+        "HomeAddress": {
+          "Street": "Reforma Avenue",
+          "FlatNo": "678",
+          "City": "Mexico City"
+        }
+      }
+    },
+    {
+      "EmployeeId": "7",
+      "Name": "Anna Schmidt",
+      "Department": "Research and Development",
+      "Gender": "Female",
+      "BaseLocation": "Berlin",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Hans",
+          "Number": "901"
+        },
+        "HomeAddress": {
+          "Street": "Brandenburg Street",
+          "FlatNo": "901",
+          "City": "Berlin"
+        }
+      }
+    },
+    {
+      "EmployeeId": "8",
+      "Name": "Ali Khan",
+      "Department": "Sales",
+      "Gender": "Male",
+      "BaseLocation": "Dubai",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Fatima",
+          "Number": "234"
+        },
+        "HomeAddress": {
+          "Street": "Sheikh Zayed Road",
+          "FlatNo": "234",
+          "City": "Dubai"
+        }
+      }
+    },
+    {
+      "EmployeeId": "9",
+      "Name": "Lina Park",
+      "Department": "Engineering",
+      "Gender": "Female",
+      "BaseLocation": "Seoul",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Jin",
+          "Number": "567"
+        },
+        "HomeAddress": {
+          "Street": "Gangnam Street",
+          "FlatNo": "567",
+          "City": "Seoul"
+        }
+      }
+    },
+    {
+      "EmployeeId": "10",
+      "Name": "Ahmed Mahmoud",
+      "Department": "Information Technology",
+      "Gender": "Male",
+      "BaseLocation": "Cairo",
+      "AdditionalDetails": {
+        "EmergencyContact": {
+          "Name": "Yara",
+          "Number": "890"
+        },
+        "HomeAddress": {
+          "Street": "Tahrir Square",
+          "FlatNo": "890",
+          "City": "Cairo"
+        }
+      }
+    }
+  ]
+}

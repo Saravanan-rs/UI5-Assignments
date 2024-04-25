@@ -1,0 +1,34 @@
+<mvc:View controllerName="asssignment9.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <headerContent>
+                    <Toolbar id="_IDGenToolbar1">
+                        <Title id="_IDGenTitle1" text="{i18n>Language}" />
+                        <Select id="languageSelect" change="onChangeLanguage">
+                            <core:Item id="_IDGenItem1" key="en" text="English" />
+                            <core:Item id="_IDGenItem2" key="fr" text="French" />
+                            <core:Item id="_IDGenItem3" key="ar" text="Arabic" />
+                        </Select>
+                    </Toolbar>
+                </headerContent>
+       <content>
+                    <Label id="_IDGenLabel1" text="{i18n>Name}" />
+                    <Input id="_IDGenInput1" value="{EmployeeModel>Name}" />
+
+                    <Label id="_IDGenLabel2" text="{i18n>EmployeeID}" />
+                    <Input id="_IDGenInput2" value="{EmployeeModel>EmployeeID}" />
+
+                    <Label id="_IDGenLabel3" text="{i18n>Designation}" />
+                    <Input id="_IDGenInput3" value="{EmployeeModel>Designation}" />
+
+                    <Label id="_IDGenLabel4" text="{i18n>Place}" />
+                    <Input id="_IDGenInput4" value="{EmployeeModel>Place}" />
+
+                    <Label id="_IDGenLabel5" text="{i18n>Department}" />
+                    <Input id="_IDGenInput5" value="{EmployeeModel>Department}" />
+                    <Button id="_IDGenButton1" text="{i18n>Submit}" ></Button>
+                </content>
+    </Page>
+</mvc:View>

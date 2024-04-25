@@ -1,0 +1,151 @@
+{
+  "_version": "1.59.0",
+  "sap.app": {
+    "id": "assign11",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.13.1",
+      "toolsId": "8e28db26-d255-4bb0-bdb9-a3f7b53070fa"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.122.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "assign11.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "assign11.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "LoginPage",
+          "pattern": "",
+          "target": "TargetLoginPage"
+        },
+        {
+          "name": "splitApp",
+          "pattern": "splitApp/{username}",
+          "target": "TargetsplitApp"
+        },
+        {
+          "name": "LogoutPage",
+          "pattern": "logout",
+          "target": "TargetLogoutPage"
+        },
+        {
+          "name": "master",
+          "pattern": "master",
+          "target": "TargetMasterPage"
+        },
+        {
+          "name": "detail",
+          "pattern": "detail/{page}",
+          "target": "TargetDetailPage"
+        }
+      ],
+      "targets": {
+        "TargetLoginPage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "LoginPage",
+          "viewName": "LoginPage"
+        },
+        "TargetsplitApp": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "splitApp",
+          "viewName": "splitApp"
+        },
+        "TargetLogoutPage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "LogoutPage",
+          "viewName": "LogoutPage"
+        },
+        "TargetMasterPage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MasterPage",
+          "viewName": "MasterPage"
+        },
+        "TargetDetailPage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "DetailPage",
+          "viewName": "DetailPage"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "assign11.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

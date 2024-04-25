@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <SelectDialog title="Select a Store" confirm="onConfirm" cancel="onCancel" items="{storeModel>/stores}" contentHeight="15rem" rememberSelections="true" search="onSearch">
+        <items>
+            <DisplayListItem label="{storeModel>name}" value="{storeModel>id}" />
+        </items>
+    </SelectDialog>
+
+</core:FragmentDefinition>

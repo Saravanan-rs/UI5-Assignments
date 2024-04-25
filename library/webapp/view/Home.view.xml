@@ -1,0 +1,32 @@
+<mvc:View controllerName="library.controller.Home"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    xmlns:core="sap.ui.core">
+ <Page title="Login">
+    <content>
+      <VBox class="background">
+        <VBox class="login-form">
+          <Title text="Login" level="H2"/>
+          <HBox height="30px"></HBox>
+          <Label text="Email"/>
+          <HBox height="10px"></HBox>
+          <Input id="emailInput" type="Email" placeholder="Enter your email"/>
+          <HBox height="20px"></HBox>
+          <Label text="Password"/>
+          <HBox height="10px"></HBox>
+          <Input id="passwordInput" type="Password" placeholder="Enter your password"/>
+          <HBox height="20px"></HBox>
+          <RadioButtonGroup id="loginType" select="onLoginTypeSelect">
+            <buttons>
+              <RadioButton text="Admin" selected="true"/>
+              <RadioButton text="Student"/>
+            </buttons>
+          </RadioButtonGroup>
+          <HBox height="20px"></HBox>
+          <Button text="Login" class="customButton" press="onLoginPress"/>
+        </VBox>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

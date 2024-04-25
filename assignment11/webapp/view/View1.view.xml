@@ -1,0 +1,38 @@
+<mvc:View controllerName="assignment11.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="Incture Employees">
+        <content>
+            <Table id="_IDGenTable1" items="{/employees}" selectionChange="onItemPress">
+                <columns>
+                    <Column id="_IDGenColumn1">
+                        <Text id="_IDGenText1" text="Employee Name"/>
+                    </Column>
+                    <Column id="_IDGenColumn2">
+                        <Text id="_IDGenText2" text="Department"/>
+                    </Column>
+                    <Column id="_IDGenColumn3">
+                        <Text id="_IDGenText3" text="Gender"/>
+                    </Column>
+                    <Column id="_IDGenColumn4">
+                        <Text id="_IDGenText4" text="Base Location"/>
+                    </Column>
+                    <Column id="_IDGenColumn5">
+                        <Text id="_IDGenText5" text="Full Details"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_IDGenColumnListItem1">
+                        <cells>
+                            <Text id="_IDGenText6" text="{Name}"/>
+                            <Text id="_IDGenText7" text="{Department}"/>
+                            <Text id="_IDGenText8" text="{Gender}"/>
+                            <Text id="_IDGenText9" text="{BaseLocation}"/>
+                            <Button id="_IDGenButton1" text="Show"  type="Emphasized" press="onDetailsPress"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

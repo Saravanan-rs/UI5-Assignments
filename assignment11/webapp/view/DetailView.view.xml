@@ -1,0 +1,59 @@
+<mvc:View controllerName="assignment11.controller.DetailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="page" title="Employee Details">
+        <content>
+            <VBox id="_IDGenVBox1" class="employeeDetailsContainer" alignItems="Center">
+                <Title id="_IDGenTitle1" text="Employee Details" level="H2" />
+                <VBox id="_IDGenVBox2" class="employeeDetails">
+                    <items>
+                        <HBox id="_IDGenHBox1" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel1" class="detailLabel" text="Name:"/>
+                                <Text id="_IDGenText1" text="{/Name}" />
+                            </items>
+                        </HBox>
+                        <HBox id="_IDGenHBox2" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel2" class="detailLabel" text="Employee ID:"/>
+                                <Text id="_IDGenText2" text="{/EmployeeId}" />
+                            </items>
+                        </HBox>
+                        <HBox id="_IDGenHBox3" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel3" class="detailLabel" text="Department:"/>
+                                <Text id="_IDGenText3" text="{/Department}" />
+                            </items>
+                        </HBox>
+                        <HBox id="_IDGenHBox4" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel4" class="detailLabel" text="Gender:"/>
+                                <Text id="_IDGenText4" text="{/Gender}" />
+                            </items>
+                        </HBox>
+                        <HBox id="_IDGenHBox5" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel5" class="detailLabel" text="Base Location:"/>
+                                <Text id="_IDGenText5" text="{/BaseLocation}" />
+                            </items>
+                        </HBox>
+                        <HBox id="_IDGenHBox6" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel6" class="detailLabel" text="Emergency Contact:"/>
+                                <Text id="_IDGenText6" text="{/AdditionalDetails/EmergencyContact/Name} - {/AdditionalDetails/EmergencyContact/Number}" />
+                            </items>
+                        </HBox>
+                        <HBox id="_IDGenHBox7" class="detailRow">
+                            <items>
+                                <Label id="_IDGenLabel7" class="detailLabel" text="Home Address:"/>
+                                <Text id="_IDGenText7" text="{/AdditionalDetails/HomeAddress/Street}, {/AdditionalDetails/HomeAddress/FlatNo}, {/AdditionalDetails/HomeAddress/City}" />
+                            </items>
+                        </HBox>
+                        <!-- Add more detail rows for other properties -->
+                    </items>
+                </VBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

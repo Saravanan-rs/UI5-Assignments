@@ -1,0 +1,14 @@
+{
+  "stores": [
+      { "id": "001", "name": "Store 1" },
+      { "id": "002", "name": "Store 2" },
+      { "id": "003", "name": "Store 3" },
+      { "id": "004", "name": "Store 4" },
+      { "id": "005", "name": "Store 5" },
+      { "id": "006", "name": "Store 6" },
+      { "id": "007", "name": "Store 7" },
+      { "id": "008", "name": "Store 8" },
+      { "id": "009", "name": "Store 9" },
+      { "id": "010", "name": "Store 10" }
+  ]
+}

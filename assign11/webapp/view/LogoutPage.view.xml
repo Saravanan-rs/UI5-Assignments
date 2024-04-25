@@ -1,0 +1,10 @@
+<mvc:View controllerName="assign11.controller.LogoutPage" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="_IDGenPage1" title="Thankyou" class="logoutPage">
+        <content>
+            <VBox id="_IDGenVBox1" class="logoutContent">
+                <Text id="_IDGenText1" text="Thank you for visiting!" class="greetingText" />
+                <Link id="_IDGenLink1" text="Click here to login again" press="onLoginAgain" class="loginAgainText" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,25 @@
+<mvc:View controllerName="library.controller.Dash"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+     <Page title="Dashboard">
+    <content>
+      <VBox class="dashboard-content">
+        <!-- Book Search Tile -->
+        <GenericTile header="Book Search" press="onBookSearchPress">
+          <TileContent>
+            <ImageContent src="sap-icon://search"/>
+          </TileContent>
+        </GenericTile>
+
+        <!-- Transaction Records Tile -->
+        <GenericTile header="Transaction Records" press="onTransactionRecordsPress">
+          <TileContent>
+            <ImageContent src="sap-icon://activity-items"/>
+          </TileContent>
+        </GenericTile>
+      </VBox>
+    </content>
+  </Page>
+
+</mvc:View>

@@ -1,0 +1,45 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="library.controller.BookSearch"
+  displayBlock="true"
+>
+  <Page title="Book Search">
+    <content>
+      <VBox class="book-search" >
+      <SearchField id="searchField" width="100%" search="onSearch" placeholder="Search by title or author"/>
+      <VBox height="25px"></VBox>
+      <Table id="booksTable" class="myTable" items="{/books}">
+        <columns>
+          <Column>
+            <Text text="ID"/>
+          </Column>
+          <Column>
+            <Text text="Title"/>
+          </Column>
+          <Column>
+            <Text text="Author"/>
+          </Column>
+          <Column>
+            <Text text="Published Year"/>
+          </Column>
+          <Column>
+            <Text text="Status"/>
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <ObjectIdentifier title="{id}"/>
+              <Text text="{title}"/>
+              <Text text="{author}"/>
+              <Text text="{publishedYear}"/>
+              <Text text="{status}"/>
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

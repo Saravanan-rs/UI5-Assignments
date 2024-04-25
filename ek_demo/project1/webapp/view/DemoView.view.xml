@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="com.incture.project1.controller.DemoView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Saravanan's UI5 App">
+        <content>
+            <ComboBox
+                id="comboBox"
+                placeholder="Select Item"
+                width="200px"
+                items="{path: '/items'}">
+                <items>
+                    <core:Item id="items" key="{key}" text="{text}" />
+                </items>
+            </ComboBox>
+           
+            <DatePicker
+                id="datePicker"
+                placeholder="Select Date"
+                width="200px"
+                change="onDatePickerChange" />
+        </content>
+    </Page>
+</mvc:View>

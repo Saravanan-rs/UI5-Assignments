@@ -1,0 +1,130 @@
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginBox {
+    width: 80%;
+}
+.background {
+    background-image: url('https://th.bing.com/th/id/R.9a368cb78919856e66c9721553bd0371?rik=X5HtznK%2f2Rrr8Q&riu=http%3a%2f%2f1.bp.blogspot.com%2f-QesK5maeoAs%2fUnjCjsWFzNI%2fAAAAAAAABHA%2fdcrab5U-kC0%2fs1600%2f18.%2bStockholm%2bPublic%2bLibrary%2b-%2b2.jpg&ehk=nnpm5jEL2xnhTdQae6Jci8Y3caPy2zhOZ0vEkibCy%2b8%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    position: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 10%; */
+    max-width: 30%;
+    max-height: 40%;
+    width: 100%;
+    height: 100%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#splitApp-Master {
+    position: fixed;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%; /* Set the height to full screen */
+    z-index: 1; /* Ensure it appears above other content */
+}
+.aboutContainer{
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Wallpaper-HD-Background.jpg");
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    height: 100%;
+}
+
+.detailPage {
+    background-image: url("https://wallpapercave.com/wp/wp2568544.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    color: white;
+    height: 100%;
+}
+
+.aboutHeading {
+    font-size: 35px;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+    padding: top 10px left 10px ; /* Ensure the text appears above the background image */
+    z-index: 1; /* Set a higher z-index to ensure the text is on top */
+}
+
+.aboutText {
+    color:white;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 25px;
+    text-align: justify;
+    max-width: 80%;
+}
+
+.detailPageContainer {
+    background-image: url("https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?cs=srgb&dl=color-depth-of-field-environment-1591447.jpg&fm=jpg");
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankYouText {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color:chartreuse;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.logoutButton {
+    width: 200px;
+    font-size: 20px;
+}
+
+.logoutPage {
+    background-image: url("https://wallpapercave.com/wp/wp2568544.jpg");
+    background-size: cover;
+    color: white;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greetingText {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top:30px;
+    color: aqua;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.loginAgainText {
+    text-decoration: underline;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px #fff;
+}

@@ -1,0 +1,25 @@
+<mvc:View controllerName="fairprice.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>home}">
+        <FlexBox justifyContent="Center" class="sapUiTinyMargin customPadding">
+            <GenericTile id="unityTile" header="Unity" width="15rem" class="tileMargin">
+                <TileContent >
+                    <Button id="Unity" text="Print Shelf Labels" type="Emphasized" press="onButtonPress" />
+                </TileContent>
+            </GenericTile>
+
+            <GenericTile id="fairPriceTile" header="Fair Price" width="15rem" class="tileMargin">
+                <TileContent>
+                    <Button id="FairPrice" text="Print Shelf Labels" type="Emphasized" press="onButtonPress" />
+                </TileContent>
+            </GenericTile>
+
+            <GenericTile id="cheersTile" header="Cheers" width="15rem" class="tileMargin">
+                <TileContent>
+                    <Button id="Cheers" text="Print Shelf Labels" type="Emphasized" press="onButtonPress" />
+                </TileContent>
+            </GenericTile>
+        </FlexBox>
+    </Page>
+</mvc:View>

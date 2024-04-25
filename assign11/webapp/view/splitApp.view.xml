@@ -1,0 +1,46 @@
+<mvc:View controllerName="assign11.controller.splitApp" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <SplitApp id="splitApp" initialDetail="detailPage">
+        <!-- Master Page -->
+        <masterPages>
+            <Page id="masterPage" title="Master">
+                <List id="list" mode="SingleSelectMaster" selectionChange="onListItemPress">
+                    <items>
+                        <StandardListItem id="homeListItem" title="Home" />
+                        <StandardListItem id="aboutListItem" title="About" />
+                        <StandardListItem id="logoutListItem" title="Logout" />
+                    </items>
+                </List>
+            </Page>
+        </masterPages>
+        <!-- Detail Pages -->
+        <detailPages>
+            <!-- Detail Page 1 -->
+            <Page id="detailPage" title="Home Page">
+                 <VBox id="_IDGenVBox" class="detailPage">
+                     <Text id="welcomeText" text="Hey admin! Welcome to Incture" class="aboutHeading" />
+                </VBox>
+            </Page>
+            <!-- Detail Page 2 -->
+            <Page id="detailPage2" title="About Page">
+                <content>
+                    <VBox id="_IDGenVBox1" class="aboutContainer">
+                        <Title id="_IDGenTitle1" text="About Us" level="H1" class="aboutHeading" />
+                        <Text id="_IDGenText1" text="Incture is a dynamic force in the digital landscape, offering cutting-edge solutions designed to propel businesses forward. With a focus on innovation and customer satisfaction, Incture helps organizations streamline operations, harness data insights, and deliver exceptional digital experiences. Powered by a team of skilled professionals and a commitment to excellence, Incture is your trusted partner for driving digital transformation and achieving sustainable growth." class="aboutText" />
+                    </VBox>
+                </content>
+            </Page>
+
+
+
+            <!-- Detail Page 3 -->
+            <Page id="detailPage3" title="Logout">
+                <content>
+                    <VBox id="_IDGenVBox2" class="detailPageContainer">
+                        <Text id="_IDGenText2" text="Thank you for visiting!" class="thankYouText" />
+                        <Button id="_IDGenButton1" type="Emphasized" text="Logout" press="onLogoutPress" class="logoutButton" />
+                    </VBox>
+                </content>
+            </Page>
+        </detailPages>
+    </SplitApp>
+</mvc:View>
