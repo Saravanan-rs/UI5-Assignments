@@ -187,8 +187,9 @@ sap.ui.define([
                 oFormDataModel.setProperty("/entries", aEntries);
                 // Show the form data table
                 oView.byId("formDataTable").setVisible(true);
+                this.updatePaginationUI();
             }
-            this.updatePaginationUI();
+           
             
         },
         updateTableItems: function () {
@@ -217,14 +218,19 @@ sap.ui.define([
 
             if (currentPage <= 1) {
                 this.byId("navLeftButton").setEnabled(false);
+                this.byId("navFirstButton").setEnabled(false);
             } else {
                 this.byId("navLeftButton").setEnabled(true);
+                this.byId("navFirstButton").setEnabled(true);
             }
 
             if (currentPage >= totalPages) {
                 this.byId("navRightButton").setEnabled(false);
-            } else {
+                this.byId("navLastButton").setEnabled(false);
+            } 
+            else {
                 this.byId("navRightButton").setEnabled(true);
+                this.byId("navLastButton").setEnabled(true);
             }
         },
 
@@ -249,7 +255,21 @@ sap.ui.define([
                 this.updatePaginationUI();
             }
         },
-
+        onFirstPagePress: function () {
+            this.currentPage = 1;
+            this.updatePaginationUI();
+        },
+        
+        // Function to handle last page button press
+        onLastPagePress: function () {
+            var oFormDataModel = this.getView().getModel("formData");
+            var aEntries = oFormDataModel.getProperty("/entries") || [];
+            var totalPages = Math.ceil(aEntries.length / this.pageSize);
+        
+            this.currentPage = totalPages;
+            this.byId("navLastButton").setEnabled(false);
+            this.updatePaginationUI();
+        },
         // Function to update pagination UI
         updatePaginationUI: function () {
             var oView = this.getView();
