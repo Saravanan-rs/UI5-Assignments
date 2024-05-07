@@ -214,7 +214,7 @@ sap.ui.define([
             var oPageInfoModel = this.getView().getModel("pageInfoModel");
             var currentPage = oPageInfoModel.getProperty("/currentPage");
             var totalPages = oPageInfoModel.getProperty("/totalPages");
-            console.log(currentPage, totalPages);
+         
 
             if (currentPage <= 1) {
                 this.byId("navLeftButton").setEnabled(false);
