@@ -59,7 +59,9 @@ sap.ui.define([
 
             var oInput = this.getView().byId("storeInput");
             oInput.setValue(sId);
-
+            
+            var oBinding = oEvent.getSource().getBinding("items");
+            oBinding.filter([]);
             this._oDialog.close();
         },
 
@@ -126,6 +128,7 @@ sap.ui.define([
             var sStartDate = oEvent.getParameter("value");
             // Set the minimum date for the end date picker
             oEndDatePicker.setMinDate(new Date(sStartDate));
+            this.byId("endDatePicker").setValue("");
         },
         onLoadData: function () {
             var oView = this.getView();
@@ -157,20 +160,16 @@ sap.ui.define([
             else if (!sDisplay) {
                 sap.m.MessageToast.show("Select Display type");
             }
-
             // else if (!sStartDate || !sEndDate) {
             //     sap.m.MessageToast.show("Date cannot be Empty");
             // }
-
             // else if (dStartDate > dEndDate) {
             //     sap.m.MessageToast.show("End date cannot be prior to the start date");
             // }
-
             else {
                 // Get the existing data from the JSON model
                 var oFormDataModel = this.getView().getModel("formData");
                 var aEntries = oFormDataModel.getProperty("/entries") || [];
-
                 // Create a new entry object
                 var oNewEntry = {
                     store: sStore,
@@ -286,9 +285,10 @@ sap.ui.define([
         },
 
         onSearch: function (oEvent) {
+            
             var sValue = oEvent.getParameter("value");
             var oBinding = oEvent.getSource().getBinding("items");
-
+            oBinding.filter([]);
             if (sValue) {
                 var oFilter = new sap.ui.model.Filter([
                     new sap.ui.model.Filter("name", sap.ui.model.FilterOperator.Contains, sValue),

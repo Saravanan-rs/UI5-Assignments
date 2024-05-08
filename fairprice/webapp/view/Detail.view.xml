@@ -14,13 +14,6 @@
                             valueHelpRequest="onValueHelpRequest" change="validateInput" />
                     </VBox>
 
-                    <!-- <SelectDialog items="{ storeModel>/stores }" title="Select a Store"
-                    confirm="onConfirm" cancel="onCancel">
-                        <items>
-                            <DisplayListItem label="{storeModel>name}" value="{storeModel>id}" />
-                        </items>
-                    </SelectDialog> -->
-
                     <VBox class="sapUiSmallMarginTop sapUiSmallMarginBegin" justifyContent="Start"
                         width="25%">
                         <Label text="Display" required="true"></Label>
