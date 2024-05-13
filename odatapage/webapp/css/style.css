@@ -1,1 +1,6 @@
 /* Enter your custom styles here */
+.active {
+    border-radius: 50%;
+    background-color: cadetblue;
+    border-color: black;
+}

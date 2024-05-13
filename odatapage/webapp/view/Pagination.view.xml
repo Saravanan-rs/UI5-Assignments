@@ -1,35 +1,46 @@
 <mvc:View controllerName="odatapage.controller.Pagination"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" displayBlock="true"
     xmlns="sap.m">
     <Shell>
-
-    <Page id="page" title="{i18n>title}" >
-        <FlexBox >
-            <Table id="productTable" items="{/Products}">
-                <columns>
-                    <Column>
-                        <Label text="Product Name" />
-                    </Column>
-                    <Column>
-                        <Label text="Unit Price (EUR)" />
-                    </Column>
-                    
-                    <Column>
-                        <Label text="Discounted Price (EUR)" />
-                    </Column>
-                </columns>
-                <items>
-                    <ColumnListItem>
-                        <cells>
-                            <ObjectIdentifier title="{ProductName}" />
-                            <Text text="{UnitPrice}" />
-                            
-                            <Text text="{parts: [{path: 'UnitPrice'}, {path: 'Discount'}], formatter: '.calculateDiscountedPrice'}" />
-                        </cells>
-                    </ColumnListItem>
-                </items>
-            </Table> 
-    </FlexBox>
-    </Page>       
-</Shell>
+        <Page id="page" title="{i18n>title}">
+            <VBox>
+                <Table id="productTable" alternateRowColors="true" items="{jsonModel>/visibleItems}">
+                    <columns>
+                        <Column>
+                            <Label text="Product Name" />
+                        </Column>
+                        <Column>
+                            <Label text="Unit Price (EUR)" />
+                        </Column>
+                        <Column>
+                            <Label text="Units in Stock" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <ObjectIdentifier title="{jsonModel>ProductName}" />
+                                <Text text="{jsonModel>UnitPrice}" />
+                                <Text text="{jsonModel>UnitsInStock}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+                <HBox justifyContent="Start" class="sapUiMediumMargin">
+                    <Button id="navLeftButton" icon="sap-icon://navigation-left-arrow" press="onPreviousPress"></Button>
+                    <HBox id="pageNumberContainer"></HBox>
+                    <Button id="navRightButton" icon="sap-icon://navigation-right-arrow" press="onNextPress"></Button>
+                    <Select id="pageLimitSelect" class="sapUiSmallMarginBegin" change="onPageLimitChange">
+                        <items>
+                            <core:Item key="5" text="5" />
+                            <core:Item key="10" text="10" />
+                            <core:Item key="15" text="15" />
+                            <core:Item key="20" text="20" />
+                        </items>
+                    </Select>
+                </HBox>
+            </VBox>
+        </Page>
+    </Shell>
 </mvc:View>
