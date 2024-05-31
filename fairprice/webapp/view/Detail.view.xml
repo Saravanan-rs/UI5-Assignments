@@ -55,7 +55,7 @@
                     <HBox width="1rem"></HBox>
                     <Button id="clearButton" text="Clear All" press="onClearAll"></Button>
                 </HBox>
-                <VBox class="sapUiSmallMarginBegin" height="12rem">
+                <VBox class="sapUiSmallMarginBegin" height="50%">
                     <Table id="formDataTable" alternateRowColors="true" width="95%" items="{formData>/entries}" visible="false">
                         <columns>
                             <Column>
