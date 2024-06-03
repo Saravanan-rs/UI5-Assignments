@@ -22,6 +22,7 @@
                     </items>
                 </List>
             </Page>
+
         </masterPages>
 
         <detailPages>
@@ -33,7 +34,6 @@
                     </items>
                 </List>
             </Page>
-            <!--   -->
 
             <Page id="employeeDBPage" title="{FirstName}'s Details">
                 <ObjectHeader title="{FirstName} {LastName}" number="Employee ID: {EmployeeID}" intro="{Title}" icon="{path:'Photo', formatter:'.formatter.trimSuperfluousBytes'}" imageShape="Circle">
@@ -48,7 +48,6 @@
                         <ObjectAttribute title="Country" text="{Country}" />
                         <ObjectAttribute title="Phone" text="{HomePhone}" />
                         <ObjectAttribute title="Notes" text="{Notes}" />
-
                     </attributes>
                 </ObjectHeader>
             </Page>
@@ -65,7 +64,6 @@
                 </f:GridList>
             </Page>
 
-
             <Page id="productsListPage" title="Product List">
                 <List items="{/Products}">
                     <items>
@@ -78,6 +76,7 @@
                     </items>
                 </List>
             </Page>
+            
         </detailPages>
     </SplitApp>
 </mvc:View>

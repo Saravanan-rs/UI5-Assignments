@@ -11,11 +11,11 @@ sap.ui.define([], function () {
             }
 
         },
-        trimSuperfluousBytes:function(sVal){
+        trimSuperfluousBytes: function (sVal) {
             var sTrimmed;
-            if(typeof sVal==="string"){
-                sTrimmed =sVal.substring(104);
-                return "data:image/bmp;base64,"+sTrimmed;
+            if (typeof sVal === "string") {
+                sTrimmed = sVal.substring(104);
+                return "data:image/bmp;base64," + sTrimmed;
             }
         }
 

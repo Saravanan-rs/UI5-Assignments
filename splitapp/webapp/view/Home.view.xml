@@ -1,0 +1,5 @@
+<mvc:View xmlns:f="sap.f" controllerName="splitapp.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Button text="To SplitApp" type="Emphasized" press="onSplitAppBtnPress"></Button>
+</mvc:View>

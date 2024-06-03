@@ -94,14 +94,28 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
+          "name": "RouteHome",
           "pattern": ":?query:",
+          "target": [
+            "TargetHome"
+          ]
+        },
+        {
+          "name": "RouteView1",
+          "pattern": "/SplitApp",
           "target": [
             "TargetView1"
           ]
         }
       ],
       "targets": {
+        "TargetHome": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Home",
+          "viewName": "Home"
+        },
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
