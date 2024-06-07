@@ -11,7 +11,7 @@ sap.ui.define([
         return Controller.extend("assignment07.controller.View1", {
             onInit: function() {
                 // Create the OData model
-                var oModel = new ODataModel("https://services.odata.org/V4/Northwind/Northwind.svc");
+                var oModel = new ODataModel("https://services.odata.org/V2/Northwind/Northwind.svc");
     
                 // Set the model to the view
                 this.getView().setModel(oModel);

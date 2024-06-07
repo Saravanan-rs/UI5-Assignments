@@ -1,9 +1,10 @@
 <mvc:View controllerName="assign11.controller.LoginPage"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m" xmlns:l="sap.ui.layout" class="loginPage">
-    <Page id="_IDGenPage1" title="Login">
-        <content>
-        <VBox id="_IDGenVBox1" class="background">
+  xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout" class="loginPage">
+  <Page id="_IDGenPage1" title="Login">
+    <content>
+      <VBox id="_IDGenVBox1" class="background">
         <VBox id="_IDGenVBox2" class="login-form">
           <Title id="_IDGenTitle1" text="Login" level="H2"/>
           <HBox id="_IDGenHBox1" height="30px"></HBox>
@@ -16,10 +17,10 @@
           <Input id="passwordInput" type="Password" placeholder="Password" width="100%" />
           <HBox id="_IDGenHBox5" height="20px"></HBox>
           <HBox id="_IDGenHBox6" height="20px"></HBox>
-          <Button id="_IDGenButton1" text="Login" type="Emphasized" press="onLoginPress" width="100%"/> 
+          <Button id="_IDGenButton1" text="Login" type="Emphasized" press="onLoginPress" width="100%"/>
         </VBox>
       </VBox>
-           
-        </content>
-    </Page>
+
+    </content>
+  </Page>
 </mvc:View>
